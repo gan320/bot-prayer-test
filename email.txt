@@ -1,0 +1,15 @@
+Plan for email:
+
+
+enter email to get Book
+
+checkboxes
+i'd like the book in pdf form
+i'd like the book in epub form
+
+
+
+Other to dos:
+- limit the preview of book (or remove entirely)
+- check with dad about the testimonials and if anything else wants to be included
+- check other colors / designs
