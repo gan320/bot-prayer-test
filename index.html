@@ -95,7 +95,7 @@
                     </header>
                     <div class="second-sub">
                         <p>Mary Ellen Joyce and Jackson Nickerson</p>
-                        <a href="img/Book08.06.25.pdf" class="btn btn-default view-pdf">Preview Book</a>
+                        <a href="img/With a Bot and a Prayer Preview.pdf" class="btn btn-default view-pdf">Preview Book</a>
                     </div>
             </div>
         </section>
@@ -287,20 +287,18 @@
                                 </div>
                             </div>
                             <br>
-                            <div class="control-check">
-                                <!-- <label class="control-label" for="message">Message</label> -->
+                            <div class="control-group">
                                 <div class="controls">
                                     <!-- <textarea name="message" id="message" rows="8" class="form-control input-lg" required data-validation-required-message="Please enter a message."></textarea> -->
-                                    
-                                    <input type="checkbox" class="control-check-input" name ="pdf" id="pdf" value="">
-                                    <label class="control-check-label" for="pdf"> Send me a .PDF copy</label>
-                                    <p class="help-block text-danger"></p>
+                            
+                                    <input type="checkbox" class="control-check-input" name="pdf" id="pdf">
+                                    <label class="form-check-label control-check-label" for="pdf"> Send me a .PDF copy</label>
+                                    <!-- <p class="help-block text-danger"></p> -->
                                 </div>
-                            </div>
-                            <div class="control-check">
                                 <div class="controls">
-                                    <input type="checkbox" class="control-check-input" name="epub" id="epub" value="">
-                                    <label class="control-check-label" for="epub"> Send me a .EPUB copy</label>
+                                    <input type="checkbox" minchecked="1" class="control-check-input" name="epub" id="epub"
+                                        data-validation-minchecked-message="Please select at least one option.">
+                                    <label class="form-check-label control-check-label" for="epub"> Send me a .EPUB copy</label>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
