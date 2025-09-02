@@ -32,7 +32,6 @@ $(document).ready(function () {
     var newHeight = (12376 / x) * 26;
 
     if (mobile) {
-      console.log("mobile!");
       newHeight = (12376 / x) * 22;
     }
 

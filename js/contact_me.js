@@ -34,7 +34,7 @@ $(function () {
             )
             .append("</button>");
           $("#success > .alert-success").append(
-            "<strong>Your message has been sent. </strong>"
+            "<strong>Your request has been received, please check your inbox for you complimentary copy! </strong>"
           );
           $("#success > .alert-success").append("</div>");
 
@@ -53,7 +53,7 @@ $(function () {
           $("#success > .alert-danger").append(
             "<strong>Sorry " +
               firstName +
-              " it seems that my mail server is not responding...</strong> Could you please email me directly to <a href='mailto:me@example.com?Subject=Message_Me from myprogrammingblog.com'>me@example.com</a> ? Sorry for the inconvenience!"
+              ", it seems the mail server is not responding...</strong> Aplogies for the incovenience. Please try again later or let us know via linked in."
           );
           $("#success > .alert-danger").append("</div>");
           //clear all fields

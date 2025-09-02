@@ -45,12 +45,23 @@
 $(function () {
   $(".view-pdf").on("click", function () {
     var pdf_link = $(this).attr("href");
-    //var iframe = '<div class="iframe-container"><iframe src="'+pdf_link+'"></iframe></div>'
-    //var iframe = '<object data="'+pdf_link+'" type="application/pdf"><embed src="'+pdf_link+'" type="application/pdf" /></object>'
+    var height = 800;
+
+    //change height for mobile
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      height = 400;
+    }
+
     var iframe =
-      '<embed type="application/pdf" src="' +
+      '<object type="application/pdf" data="' +
       pdf_link +
-      '" width="100%" height="800">Mobile not supported, please view on web</embed>';
+      '" width="100%" height="' +
+      height +
+      '">PDF viewer not supported on this device, please view on web</object>';
     $.createModal({
       title: "Preview",
       message: iframe,
